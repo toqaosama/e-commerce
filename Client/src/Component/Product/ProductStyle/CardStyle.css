@@ -1,0 +1,120 @@
+/* Main card container */
+.product-card {
+    max-width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    padding: 1%;
+  }
+  
+  /* Image container and carousel */
+  .product-image-container {
+    overflow: hidden;
+    position: relative;
+    height: 60vh;
+    margin-bottom: 8px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Image indicators/pagination */
+  .image-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 8px;
+  }
+  
+  .image-indicator {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin: 0 8px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image-indicator.active {
+    background-color: #222;
+  }
+  
+  .image-indicator:not(.active) {
+    background-color: #fff;
+  }
+  
+  /* Wishlist button */
+  .wishlist-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    z-index: 2;
+  }
+  
+  .wishlist-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Product info */
+  .product-info {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 0;
+    color: #222;
+  }
+  
+  .product-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .product-title a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Price and add to cart */
+  .product-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .product-price {
+    color: #777;
+  }
+  
+  .add-to-cart-btn {
+    padding: 4px 12px;
+    font-size: 14px;
+    border: 1px solid #222;
+    background: transparent;
+    color: #222;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Override Bootstrap styles */
+  .card-body {
+    padding: 0;
+  }

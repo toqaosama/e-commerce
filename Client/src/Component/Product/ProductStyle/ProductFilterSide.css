@@ -1,0 +1,90 @@
+/* src/components/SideFilterBar/SideFilterBar.css */
+.side-filter-bar {
+    display: block;
+    padding-left: 36px;
+    min-width: 376px;
+    max-width: 376px;
+    padding: 16px 0px 16px 36px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .side-filter-container {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .side-filter-inner {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .side-filter-content {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px 16px;
+    float: inline-start;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .filter-nav {
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-nav-item {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .filter-nav-link {
+    cursor: pointer;
+    padding-top: 0px;
+    font-weight: 600;
+    padding: 0px 4px 4px;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    display: block;
+    line-height: 22.4px;
+    text-decoration: none;
+  }
+  
+  .filter-nav-link.trending {
+    color: rgb(214, 0, 28);
+  }
+  
+  .filter-subnav {
+    gap: normal;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-subnav-item {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-subnav-link {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px;
+    color: rgb(34, 34, 34);
+    display: block;
+    line-height: 16.8px;
+    text-decoration: none;
+  }

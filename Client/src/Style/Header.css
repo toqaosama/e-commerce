@@ -1,0 +1,15 @@
+.BrandName{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: brown;
+}
+.Item{
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+.bg-body-tertiary{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}

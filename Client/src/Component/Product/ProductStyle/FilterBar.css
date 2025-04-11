@@ -1,0 +1,75 @@
+/* src/components/FilterBar/FilterBar.css */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+  
+  .filter-dropdown-toggle {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .filter-dropdown-menu {
+    width: 36rem;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .filter-dropdown-item {
+    padding: 16px 12px;
+  }
+  
+  .filter-dropdown-item:first-child {
+    margin-top: -6px;
+  }
+  
+  .filter-dropdown-item-recommended {
+    color: rgb(119, 119, 119);
+  }
+  
+  .filter-count {
+    color: rgb(119, 119, 119);
+    margin-left: 9px;
+    font-size: 14px;
+  }
+  
+  .color-swatch {
+    background-color: var(--color);
+    width: 2rem;
+    height: 20px;
+    border: 0.8px solid rgb(245, 245, 245);
+    margin-right: 7px;
+    display: inline-block;
+  }
+  
+  .all-filters-link {
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+    margin-top: -5px;
+    gap: 4px;
+  }
+  
+  .item-count {
+    margin-top: 4px;
+  }
+  
+  .view-toggle {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+  
+  .view-toggle img {
+    opacity: 0.5;
+  }
+  
+  .view-toggle.active img {
+    opacity: 1;
+  }
