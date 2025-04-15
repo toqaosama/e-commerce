@@ -21,14 +21,6 @@ function SidebarLayout() {
         <Container>
           <Navbar.Brand>
           <Link to="/" className="BrandName">
-            <img
-              alt=""
-            //   src={HomeIcon}
-              width="30"
-              height="30"
-              marginLeft="20px"
-              className="d-inline-block align-top"
-            />{' '}
             Adiman Dashboard
             </Link>
           </Navbar.Brand>
@@ -59,7 +51,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            Account</Link>
           </li>
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -71,7 +63,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            Product</Link>
           </li>
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -83,7 +75,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            Categore</Link>
           </li>
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -95,7 +87,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            Payment</Link>
           </li>
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -107,7 +99,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            Settings</Link>
           </li>
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -119,7 +111,7 @@ function SidebarLayout() {
               marginLeft="20px"
               className="d-inline-block align-top"
             />
-            Home</Link>
+            LogOut</Link>
           </li>
         </ul>
         
