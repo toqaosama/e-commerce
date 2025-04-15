@@ -4,7 +4,7 @@ import Home from "./Home/Home"
 import NotFound from "./Shared/Error"
 import ProductShow from "./Component/Product/ProductShow"
 import ProductCards from "./Component/Product/ProductCrad"
-
+import Dashboardside from "./Component/admin/Dashboardside"
 
 export const router = createBrowserRouter([
 
@@ -21,7 +21,13 @@ export const router = createBrowserRouter([
     {path:"/ProductShow" , element: <ProductShow />},
   ]
 },
-
+{
+  path:"",
+  element:<App />,
+  children:[
+    {path:"/Dashboardside" , element: <Dashboardside />},
+  ]
+},
 
 {
   path: '*',

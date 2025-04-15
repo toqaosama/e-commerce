@@ -29,16 +29,5 @@ app.get('/', (req, res) => {
 
 
 
-// // Example POST route to insert data
-// app.post('/users', (req, res) => {
-//   const { name, email } = req.body;
-//   connection.query(
-//     'INSERT INTO users (name, email) VALUES (?, ?)',
-//     [name, email],
-//     (error, results) => {
-//       if (error) throw error;
-//       res.json({ id: results.insertId, name, email });
-//     }
-//   );
-// });
+
 
