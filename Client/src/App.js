@@ -7,7 +7,6 @@ const App = () => {
   return (
     <>
       <HeaderUser />
-      
       <Outlet /> {/* This ensures your pages load here */}
       <Footer />
     </>
