@@ -9,6 +9,8 @@ import UsersPage from "./Component/admin/UsersPage";
 import AnalyticsPage from "./Component/admin/AnalyticsPage";
 import NotificationsPage from "./Component/admin/NotificationsPage";
 import SettingsPage from "./Component/admin/SettingsPage";
+import StartCard from "./Component/admin/StatCard"
+import ProductManage from "./Component/admin/ProductManage"
 
 // Layouts
 import AdminLayout from "./Component/layout/AdminLayout";
@@ -21,18 +23,23 @@ export const router = createBrowserRouter([
       { path: "", element: <Home /> }, // shows at "/"
       { path: "product-show", element: <ProductShow /> },
       { path: "product-cards", element: <ProductCards /> },
+      {path:"StartCard", element: <StartCard />},
+      {path:"ProductManage", element: <ProductManage />},
+      {path:"dashboard", element: <DashboardPage />},
     ],
   },
   {
     path: "/admin",
     element: <AdminLayout />,
     children: [
-      { path: "", element: <Navigate to="dashboard" replace /> }, // redirect "/admin" → "/admin/dashboard"
-      { path: "dashboard", element: <DashboardPage /> },
+      { path: "", element: <Navigate to="Sidebar" replace /> }, // redirect "/admin" → "/admin/dashboard"
+      { path: "Dashboard", element: <DashboardPage /> },
       { path: "users", element: <UsersPage /> },
       { path: "analytics", element: <AnalyticsPage /> },
       { path: "notifications", element: <NotificationsPage /> },
       { path: "settings", element: <SettingsPage /> },
+      { path: "ProductManage", element: <ProductManage /> },
+      { path: "startcard", element: <StartCard /> },
     ],
   },
   {
