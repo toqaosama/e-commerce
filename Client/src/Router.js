@@ -11,7 +11,7 @@ import NotificationsPage from "./Component/admin/NotificationsPage";
 import SettingsPage from "./Component/admin/SettingsPage";
 import StartCard from "./Component/admin/StatCard"
 import ProductManage from "./Component/admin/ProductManage"
-
+import ProductDetailsPage from "./Component/productDetiles/ProductDetailsPage"
 // Layouts
 import AdminLayout from "./Component/layout/AdminLayout";
 
@@ -26,6 +26,7 @@ export const router = createBrowserRouter([
       {path:"StartCard", element: <StartCard />},
       {path:"ProductManage", element: <ProductManage />},
       {path:"dashboard", element: <DashboardPage />},
+      {path:"ProductDetailsPage", element: <ProductDetailsPage />},
     ],
   },
   {
