@@ -36,6 +36,7 @@ const ProductCard = () => {
                 src={productImages[activeImageIndex]}
                 alt="Sphere-detail front and back earrings"
                 className="product-image"
+              
               />
               
               {/* Image Indicators */}

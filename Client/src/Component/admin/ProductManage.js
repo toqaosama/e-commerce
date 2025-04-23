@@ -57,7 +57,7 @@ const Products = () => {
                 {products.map(product => (
                   <tr key={product.id}>
                     <td>
-                      <div className="product-image-container">
+                      <div className="product-image-container icon">
                         <img 
                           src={product.image} 
                           alt={product.name} 
