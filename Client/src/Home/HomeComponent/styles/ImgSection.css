@@ -1,0 +1,187 @@
+.women-banner-wrapper {
+    width: 100%;
+    max-width: none;
+    margin: auto;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-section {
+    padding: 0;
+    position: relative;
+  }
+  
+  .banner-container {
+    width: 100%;
+    max-width: none;
+    margin: auto;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 0;
+  }
+  
+  .banner-block {
+    margin: 0 0 24px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+  }
+  
+  .banner-image-container {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-image {
+    aspect-ratio: 1 / 1 auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: block;
+  }
+  
+  .banner-content {
+    bottom: 0;
+    left: 379.8px;
+    transform: matrix(1, 0, 0, 1, -379.8, 0);
+    width: auto;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-title {
+    font-size: 14px;
+    line-height: 18.2px;
+    color: rgb(0, 0, 0);
+    margin: 0.7rem auto 0;
+    font-family: "hm slussen regular", "hm slussen regular fallback", "helvetica neue";
+    white-space: break-spaces;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-cta {
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-cta p {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .shop-now-link {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18.2px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    font-family: "hm slussen regular", "hm slussen regular fallback", "helvetica neue";
+    align-content: center;
+    padding: 0;
+    height: 18.2px;
+    border: 0 none rgb(34, 34, 34);
+    border-radius: 0;
+    width: auto;
+    font: 14px / 18.2px "hm slussen regular", "hm slussen regular fallback", "helvetica neue";
+    letter-spacing: normal;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: underline solid rgb(34, 34, 34);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-overlay-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: block;
+    background: rgba(255, 255, 255, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    color: rgb(34, 34, 34);
+    text-decoration: none solid rgb(34, 34, 34);
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* Second banner specific styles */
+  .banner-section:nth-child(2) .banner-title {
+    font-size: 32px;
+    line-height: 41.6px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .banner-section:nth-child(2) .shop-now-link {
+    border: 0 none rgb(255, 255, 255);
+    border-radius: 0;
+    margin: 8px 0;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    font: 600 16px / 22.4px "hm slussen extended semibold", "hm slussen semibold fallback", "helvetica neue";
+    letter-spacing: 1.28px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none solid rgb(255, 255, 255);
+    padding: 12px 24px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 48px;
+    justify-content: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .banner-section {
+      margin-bottom: 24px;
+    }
+    
+    .banner-content {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+    }
+    
+    .banner-title {
+      font-size: 12px;
+      line-height: 15.6px;
+    }
+    
+    .banner-section:nth-child(2) .banner-title {
+      font-size: 24px;
+      line-height: 31.2px;
+    }
+  }
