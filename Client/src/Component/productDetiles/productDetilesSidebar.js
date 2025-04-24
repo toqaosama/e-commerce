@@ -22,7 +22,13 @@ const ProductDetailsSidebar = ({ show, handleClose }) => {
   return (
     <div 
       className={`product-details-sidebar ${show ? 'show' : ''}`}
-      style={{ width: '100%' }}
+      style={{ 
+        width: '100%',
+        padding: '0%',
+        marginRight: '0%',
+        marginLeft:'-20%'
+
+      }}
     >
       <div className="sidebar-header">
         <h3>{productData.name}</h3>

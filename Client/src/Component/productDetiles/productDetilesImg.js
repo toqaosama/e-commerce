@@ -4,10 +4,11 @@ const ProductDetailsImg = () => {
   return (
     <div className="product-images" style={{ 
       display: 'block', 
-     
       position: 'relative', 
       flexDirection: 'column',
-      maxWidth: '80%'
+      maxWidth: '80%',
+      padding: '0%',
+      marginLeft: '5%'
     }}>
       <div style={{ 
         alignSelf: 'auto', 
@@ -19,7 +20,6 @@ const ProductDetailsImg = () => {
         {/* Main grid container */}
         <div style={{ 
           display: 'grid',
-         
           position: 'relative',
           gridAutoRows: 'min-content',
           width: '100%'

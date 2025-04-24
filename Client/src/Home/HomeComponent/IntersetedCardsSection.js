@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa"; // For wishlist toggle icon
+import { Link } from "react-router-dom";
 
 const InterestedSection = () => {
   const [isWishlisted, setIsWishlisted] = useState(false);
@@ -8,6 +9,7 @@ const InterestedSection = () => {
   const imageUrls = [
     "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1fbc412c-19ee-47ef-9b86-36ad1c3afee5/as/EID-85ab170684dd40118de3d7f1cce688fa2762655c.jpg?width=450&height=675&preferwebp=true",
     "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1b4b55dc-1e30-47fb-b92f-c1e9b088e002/as/EID-88d16fc8fa2ac6d5515a9fb73b13cc8420248e64.jpg?width=450&height=675&preferwebp=true",
+    "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1da8b1fb-592f-42bd-b932-03cb7f5f1bec/as/EID-9bdbe38eb362b57d1c9a25b0d0f35196a34203ef.jpg?width=450&height=675&preferwebp=true",
     // Add more URLs here for carousel
   ];
 
@@ -42,18 +44,21 @@ const InterestedSection = () => {
       <div className="d-flex flex-wrap">
         {[...Array(10)].map((_, i) => (
           <div key={i} style={{ flex: "0 0 20%", padding: 0, position: "relative" }}>
-            <img
-              src={imageUrls[carouselIndex]} // You can randomize or alternate as needed
-              className="img-fluid w-100"
-              alt="Fitted jacket"
-              title="Fitted jacket"
-              style={{
-                aspectRatio: "450 / 675",
-                objectFit: "cover",
-                display: "block",
-                width: "100%",
-              }}
-            />
+            <Link as={Link} to="/" style={{ display: "block" }}>
+              <img
+                src={imageUrls[i % imageUrls.length]} // Cycle through available images
+                className="img-fluid w-100"
+                alt={`Product ${i + 1}`}
+                title={`Product ${i + 1}`}
+                style={{
+                  aspectRatio: "450 / 675",
+                  objectFit: "cover",
+                  display: "block",
+                  width: "100%",
+                }}
+              />
+            </Link>
+            
             {/* Wishlist Toggle on Grid Items */}
             <button
               onClick={toggleWishlist}

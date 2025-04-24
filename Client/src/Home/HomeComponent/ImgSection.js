@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './styles/ImgSection.css'; // We'll create this CSS file to maintain the original styles
+import { Link } from 'react-router-dom';
+import './styles/ImgSection.css';
 
 const WomenBanner = () => {
   return (
@@ -39,21 +40,23 @@ const WomenBanner = () => {
                   <h2 className="banner-title">SARTORIAL STATEMENT</h2>
                   <div className="banner-cta">
                     <p>
-                      <a 
-                        href="/en/shop-women/trending-now/city-chic" 
+                      <Link 
+                        as={Link}
+                        to="/" 
                         title="SHOP NOW" 
                         className="shop-now-link"
                       >
                         SHOP NOW
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
-                <a 
-                  href="https://eg.hm.com/en/shop-women/trending-now/city-chic" 
+                <Link 
+                  as={Link}
+                  to="/"
                   title="SARTORIAL STATEMENT" 
                   className="banner-overlay-link"
-                ></a>
+                ></Link>
               </div>
             </div>
           </Col>
@@ -90,21 +93,23 @@ const WomenBanner = () => {
                   <h2 className="banner-title">DENIM & FRILLS</h2>
                   <div className="banner-cta">
                     <p>
-                      <a 
-                        href="/en/shop-women/trending-now/romance" 
+                      <Link 
+                        as={Link}
+                        to="/" 
                         title="SHOP NOW" 
                         className="shop-now-link"
                       >
                         SHOP NOW
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
-                <a 
-                  href="/en/shop-women/trending-now/romance" 
+                <Link 
+                  as={Link}
+                  to="/"
                   title="DENIM & FRILLS" 
                   className="banner-overlay-link"
-                ></a>
+                ></Link>
               </div>
             </div>
           </Col>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Start from './img/start.jpg'
-
 
 const WomenBanner = () => {
   return (
@@ -14,7 +14,6 @@ const WomenBanner = () => {
               <div className="banner-block">
                 <div className="banner-image-container">
                   <picture>
-            
                     <img 
                       alt="" 
                       loading="eager" 
@@ -25,11 +24,12 @@ const WomenBanner = () => {
                     />
                   </picture>
                 </div>
-                <a 
-                  href="https://eg.hm.com/en/shop-women/trending-now/city-chic" 
+                <Link 
+                  as={Link}
+                  to="/"
                   title="SARTORIAL STATEMENT" 
                   className="banner-overlay-link"
-                ></a>
+                ></Link>
               </div>
             </div>
           </Col>
